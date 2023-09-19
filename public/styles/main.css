@@ -1,0 +1,125 @@
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.day-holder{
+    color: #eee;
+}
+.task-item p {
+   
+    display: inline; /* Display the task text as inline */
+  }
+  
+.task-item.completed p {
+    
+    text-decoration: line-through; /* Apply strikethrough style for completed tasks */
+}
+.link-holder{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+a {
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 7em;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    color: lightcoral;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+   }
+   
+   a:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+   }
+   
+   a:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   a:disabled {
+    cursor: auto;
+    color: grey;
+   }
+ 
+.main-div{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30vw;
+}   
+.task-holder{
+    margin-top: 5vh;
+    width: 50vw;
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    color: lightcoral;
+    cursor: pointer;
+    text-decoration: none;
+}
+.task-form input{
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 1rem;
+    color: lightcoral;
+    cursor:auto;
+    text-decoration: none;
+}
+.task-form input:focus{
+    border: none;
+    outline: none;
+}
+.task-form button{
+    background-color: #eee;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 5em;
+    border-radius: 1rem;
+    color: lightcoral;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.task-form button:active{
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+}
+.task-form button:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+.task-form button:disabled {
+    cursor: auto;
+    color: grey;
+   }  
+.footer{
+    margin-left: 50vw;
+    position: absolute;
+    bottom: 0;
+}
